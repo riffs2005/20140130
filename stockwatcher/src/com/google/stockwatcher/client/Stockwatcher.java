@@ -58,9 +58,9 @@ public class Stockwatcher implements EntryPoint {
 		nameField.selectAll();
 
 		// Create the popup dialog box
-		final DialogBox dialogBox = new DialogBox();
-		dialogBox.setText("Remote Procedure Call");
-		dialogBox.setAnimationEnabled(true);
+		//final DialogBox dialogBox = new DialogBox();
+		//dialogBox.setText("Remote Procedure Call");
+		//dialogBox.setAnimationEnabled(true);
 		final Button closeButton = new Button("Close");
 		// We can set the id of a widget by accessing its Element
 		closeButton.getElement().setId("closeButton");
@@ -74,7 +74,7 @@ public class Stockwatcher implements EntryPoint {
 		dialogVPanel.add(serverResponseLabel);
 		dialogVPanel.setHorizontalAlignment(VerticalPanel.ALIGN_RIGHT);
 		dialogVPanel.add(closeButton);
-		dialogBox.setWidget(dialogVPanel);
+		//dialogBox.setWidget(dialogVPanel);
 
 		// Add a handler to close the DialogBox
 		closeButton.addClickHandler(new ClickHandler() {
